@@ -1,10 +1,10 @@
-package es.cic.curso25.proy005;
+package es.cic.curso25.proy005.service;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
+import es.cic.curso25.proy005.model.MateriaAprendizaje;
 
 @Service //Indica que es un archivo de lógica
-@Transactional //Indica que los metodos se van a ejecutar en una transacción en caso de que salga mal hace rollback
 public class MateriaAprendizajeService {
     private long id=1;
 

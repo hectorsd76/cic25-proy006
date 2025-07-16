@@ -1,9 +1,10 @@
-package es.cic.curso25.proy005;
+package es.cic.curso25.proy005.controller;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScans;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,9 +12,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import es.cic.curso25.proy005.model.MateriaAprendizaje;
+import es.cic.curso25.proy005.service.MateriaAprendizajeService;
+
 @RestController //indica que es una clase  controlador REST maneja peticiones HTTP
 @RequestMapping("/materia") // Define ruta URL
-
 public class MateriaAprendizajeController {
     @Autowired //inyecta elemento creado mediante Spring en este ejemplo service
     private MateriaAprendizajeService materiaAprendizajeService;
