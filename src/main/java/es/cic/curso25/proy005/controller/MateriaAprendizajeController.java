@@ -3,6 +3,8 @@ package es.cic.curso25.proy005.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +20,9 @@ import es.cic.curso25.proy005.service.MateriaAprendizajeService;
 @RestController //indica que es una clase  controlador REST maneja peticiones HTTP
 @RequestMapping("/materia") // Define ruta URL
 public class MateriaAprendizajeController {
+    
+    private final static Logger LOGGER = LoggerFactory.getLogger(MateriaAprendizajeController.class);
+    
     @Autowired //inyecta elemento creado mediante Spring en este ejemplo service
     private MateriaAprendizajeService materiaAprendizajeService;
 
