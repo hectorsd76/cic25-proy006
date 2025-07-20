@@ -20,7 +20,7 @@ public class MotorServiceIntegrationTest {
     public void testCreate() {
         Motor motorACrear = new Motor();
         motorACrear.setEncendido(true);
-        motorACrear.setMarca("Iveco");
+        motorACrear.setMarca("Ivec");
         motorACrear.setPotencia(2.1);
         
         long idAsignado = motorService.create(motorACrear);
